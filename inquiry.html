@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device=width" />
+    <meta name="description" content="Creativity as it's Finest" />
+    <meta name="keywords" content=" creativity, finest" />
+    <meta name="author" content="Group Dos" />
+    <meta charset="utf-8" />
+    <title>Happy Kopi</title>
+    <link rel="icon" href="images/yellowlogo.png" type="image/icon type" />
+    <link rel="stylesheet" href="css/inquiry.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="wrapper">
+      <nav>
+        <input type="checkbox" id="show-search" />
+        <input type="checkbox" id="show-menu" />
+        <label for="show-menu" class="menu-icon"
+          ><i class="fas fa-bars"></i
+        ></label>
+        <div class="logocon">
+          <img class="ylogo" src="./images/yellowlogo.png" />
+        </div>
+        <div class="content">
+          <ul class="links">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./menu.html">Menu</a></li>
+            <li><a href="./location.html">Locations</a></li>
+            <li><a href="./about.html">About</a></li>
+            <li><a href="./inquiry.html">Inquiry</a></li>
+          </ul>
+        </div>
+        <div class="soc-iconcon">
+          <a href="https://www.facebook.com/">
+            <img class="soc-icon" src="./images/fb.png" />
+          </a>
+          <br />
+          <a href="https://www.instagram.com/">
+            <img class="soc-icon2" src="./images/ig.png" />
+          </a>
+          <br />
+          <a href="https://www.twitter.com">
+            <img class="soc-icon1" src="./images/twitter.png" />
+          </a>
+        </div>
+      </nav>
+    </div>
+
+    <section id="Showcase">
+      <div class="container">
+        <h1>Contact Us</h1>
+        <p>Swing by for a cup of coffee, or leave us a message</p>
+      </div>
+      <style>
+        input[type="text"],
+        input[type="email"],
+        select,
+        textarea {
+          width: 100%;
+          padding: 12px;
+          border: 1px solid #ccc;
+          border-radius: 4px;
+          box-sizing: border-box;
+          margin-top: 6px;
+          margin-bottom: 16px;
+          resize: vertical;
+        }
+        button[type="submit"] {
+          background-color: #8d6d03;
+          color: white;
+          padding: 12px 20px;
+          border: none;
+          border-radius: 4px;
+          cursor: pointer;
+        }
+        button[type="submit"]:hover {
+          background-color: #fffdd0;
+          color: #8d6d03;
+        }
+        .containers {
+          border-radius: 5px;
+          background-color: #f2f2f2;
+          padding: 20px;
+        }
+      </style>
+    </section>
+    <body>
+      <div class="containers">
+        <form onsubmit="sendEmail(); reset(); return false">
+          <label for="name">Name</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Name"
+            required
+          />
+
+          <label for="email">Email Address</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Email Address"
+            required
+          />
+
+          <label for="country">Location</label>
+          <select id="country" name="country" required>
+            <option value="Valenzuela">Valenzuela</option>
+            <option value="Caloocan">Caloocan</option>
+            <option value="Malabon">Malabon</option>
+            <option value="Batangas">Batangas</option>
+            <option value="Bulacan">Bulacan</option>
+            <option value="Laguna">Laguna</option>
+            <option value="Pasay">Pasay</option>
+            <option value="Pasig">Pasig</option>
+          </select>
+
+          <label for="subject">Subject</label>
+          <textarea
+            id="subject"
+            name="subject"
+            placeholder="Write something.."
+            style="height: 200px"
+          ></textarea>
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+    </body>
+  </body>
+  <footer class="footer">
+    <div class="homef">
+      <h5><a href="./index.html">Home</a></h5>
+      <h6>See Our Latest Products!</h6>
+    </div>
+    <div class="Menuf">
+      <h5><a href="./menu.html">Menu</a></h5>
+      <h6>Latest</h6>
+    </div>
+    <div class="Menuf">
+      <h5><a href="./location.html">About Us</a></h5>
+      <h6>Who?</h6>
+    </div>
+    <div class="Menuf">
+      <h5><a href="./about.html">Contacts</a></h5>
+      <h6>Who's there?</h6>
+    </div>
+  </footer>
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
+  <script src="js/inquiry.js"></script>
+</html>
